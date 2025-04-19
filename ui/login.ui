@@ -52,7 +52,7 @@
     <string>Welcome Back!</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -156,7 +156,7 @@
     <string>Confirmed password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit">
+  <widget class="QLineEdit" name="txt_email">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -177,7 +177,7 @@
     <string>Input your email here</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_2">
+  <widget class="QLineEdit" name="txt_password">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -198,7 +198,7 @@
     <string>Input your password here</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_3">
+  <widget class="QLineEdit" name="txt_confirmed_passwordp">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -219,17 +219,59 @@
     <string>Confirm your password here</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>430</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Forgot password?</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_eye">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>390</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_signup">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>430</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </widget>
   <zorder>label_7</zorder>
   <zorder>pushButton_5</zorder>
   <zorder>label</zorder>
-  <zorder>pushButton_4</zorder>
+  <zorder>btn_login</zorder>
   <zorder>label_2</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
-  <zorder>lineEdit</zorder>
-  <zorder>lineEdit_2</zorder>
-  <zorder>lineEdit_3</zorder>
+  <zorder>txt_email</zorder>
+  <zorder>txt_password</zorder>
+  <zorder>txt_confirmed_passwordp</zorder>
+  <zorder>label_6</zorder>
+  <zorder>btn_eye</zorder>
+  <zorder>btn_signup</zorder>
  </widget>
  <resources/>
  <connections/>
