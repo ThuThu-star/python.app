@@ -71,7 +71,7 @@
     padding: 10px 0;</string>
    </property>
    <property name="text">
-    <string>Sign up</string>
+    <string>Login</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_5">
