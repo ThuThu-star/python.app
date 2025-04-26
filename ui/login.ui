@@ -198,7 +198,7 @@
     <string>Input your password here</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_confirmed_passwordp">
+  <widget class="QLineEdit" name="txt_confirm_passwordp">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -255,7 +255,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>sign up</string>
    </property>
   </widget>
   <zorder>label_7</zorder>
@@ -268,7 +268,7 @@
   <zorder>label_5</zorder>
   <zorder>txt_email</zorder>
   <zorder>txt_password</zorder>
-  <zorder>txt_confirmed_passwordp</zorder>
+  <zorder>txt_confirm_passwordp</zorder>
   <zorder>label_6</zorder>
   <zorder>btn_eye</zorder>
   <zorder>btn_signup</zorder>
