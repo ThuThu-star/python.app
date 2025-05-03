@@ -35,8 +35,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>90</y>
+     <x>618</x>
+     <y>152</y>
      <width>551</width>
      <height>61</height>
     </rect>
@@ -55,8 +55,8 @@
   <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>400</y>
+     <x>578</x>
+     <y>462</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -77,10 +77,10 @@
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>50</y>
+     <x>508</x>
+     <y>122</y>
      <width>491</width>
-     <height>521</height>
+     <height>451</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -95,8 +95,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>190</y>
+     <x>578</x>
+     <y>252</y>
      <width>111</width>
      <height>20</height>
     </rect>
@@ -111,8 +111,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>290</y>
+     <x>578</x>
+     <y>352</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -127,8 +127,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>150</y>
+     <x>648</x>
+     <y>212</y>
      <width>241</width>
      <height>20</height>
     </rect>
@@ -143,8 +143,8 @@
   <widget class="QLineEdit" name="txt_email">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>220</y>
+     <x>578</x>
+     <y>282</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -164,8 +164,8 @@
   <widget class="QLineEdit" name="txt_password">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>320</y>
+     <x>578</x>
+     <y>382</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -185,8 +185,8 @@
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>370</y>
+     <x>588</x>
+     <y>432</y>
      <width>121</width>
      <height>20</height>
     </rect>
@@ -198,8 +198,8 @@
   <widget class="QPushButton" name="btn_signup">
    <property name="geometry">
     <rect>
-     <x>830</x>
-     <y>450</y>
+     <x>838</x>
+     <y>512</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -220,8 +220,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>842</x>
-     <y>328</y>
+     <x>850</x>
+     <y>390</y>
      <width>81</width>
      <height>31</height>
     </rect>

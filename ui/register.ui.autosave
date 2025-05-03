@@ -16,8 +16,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>-670</x>
-     <y>0</y>
+     <x>-660</x>
+     <y>-10</y>
      <width>1751</width>
      <height>731</height>
     </rect>
@@ -35,28 +35,28 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>90</y>
+     <x>510</x>
+     <y>60</y>
      <width>551</width>
      <height>61</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">font-family: 'Arial Black', 'Impact', sans-serif;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: bold;
     color: #4B2E1E; 
     letter-spacing: 0.5px;</string>
    </property>
    <property name="text">
-    <string>Welcome Back!</string>
+    <string>Welcome to Surabi Duren Bang Kumis</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_login">
+  <widget class="QPushButton" name="btn_signup">
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>400</y>
+     <y>560</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -71,7 +71,7 @@
     padding: 10px 0;</string>
    </property>
    <property name="text">
-    <string>Login</string>
+    <string>Sign up</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_5">
@@ -80,7 +80,7 @@
      <x>500</x>
      <y>50</y>
      <width>491</width>
-     <height>521</height>
+     <height>601</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -96,7 +96,7 @@
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>190</y>
+     <y>240</y>
      <width>111</width>
      <height>20</height>
     </rect>
@@ -112,7 +112,7 @@
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>290</y>
+     <y>340</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -127,9 +127,9 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>150</y>
-     <width>241</width>
+     <x>680</x>
+     <y>110</y>
+     <width>111</width>
      <height>20</height>
     </rect>
    </property>
@@ -137,14 +137,30 @@
     <string notr="true">font: 9pt &quot;Lucida Sans Unicode&quot;;</string>
    </property>
    <property name="text">
-    <string>Please login to your account</string>
+    <string>Please sign up</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>440</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Lucida Sans Unicode&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Confirmed password</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="txt_email">
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>220</y>
+     <y>270</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -165,7 +181,7 @@
    <property name="geometry">
     <rect>
      <x>570</x>
-     <y>320</y>
+     <y>370</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -182,26 +198,47 @@
     <string>Input your password here</string>
    </property>
   </widget>
+  <widget class="QLineEdit" name="txt_confirmed_password">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>470</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #e0e0e0; 
+    border-radius: 10px;    
+    padding: 8px 12px;                
+    background-color: #ffffff;        
+    color: #333333;                    
+    font-size: 14px; </string>
+   </property>
+   <property name="placeholderText">
+    <string>Confirm your password here</string>
+   </property>
+  </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>370</y>
-     <width>121</width>
+     <x>570</x>
+     <y>520</y>
+     <width>171</width>
      <height>20</height>
     </rect>
    </property>
    <property name="text">
-    <string>Forgot password?</string>
+    <string>Already have an account?</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_signup">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>830</x>
-     <y>450</y>
-     <width>101</width>
-     <height>31</height>
+     <x>810</x>
+     <y>520</y>
+     <width>93</width>
+     <height>29</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -210,47 +247,65 @@
     font-weight: bold;
     font-size: 14px;
     border: none;
-    border-radius: 5px;         /* Rounded corners */
-    padding: 7px 0;</string>
+    border-radius: 8px;         /* Rounded corners */
+    padding: 5px 0;</string>
    </property>
    <property name="text">
-    <string>sign up</string>
+    <string>Login</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="label_8">
    <property name="geometry">
     <rect>
-     <x>842</x>
-     <y>328</y>
+     <x>570</x>
+     <y>140</y>
      <width>81</width>
-     <height>31</height>
+     <height>20</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background: none;
-border: none;
-</string>
+    <string notr="true">font: 9pt &quot;Lucida Sans Unicode&quot;;</string>
    </property>
    <property name="text">
-    <string/>
+    <string>Username</string>
    </property>
-   <property name="icon">
-    <iconset>
-     <normaloff>../img/eye-solid.svg</normaloff>../img/eye-solid.svg</iconset>
+  </widget>
+  <widget class="QLineEdit" name="txt_email_2">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>170</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 1px solid #e0e0e0; 
+    border-radius: 10px;    
+    padding: 8px 12px;                
+    background-color: #ffffff;        
+    color: #333333;                    
+    font-size: 14px; </string>
+   </property>
+   <property name="placeholderText">
+    <string>Input your username here</string>
    </property>
   </widget>
   <zorder>label_7</zorder>
   <zorder>pushButton_5</zorder>
   <zorder>label</zorder>
-  <zorder>btn_login</zorder>
+  <zorder>btn_signup</zorder>
   <zorder>label_2</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
   <zorder>txt_email</zorder>
   <zorder>txt_password</zorder>
+  <zorder>txt_confirmed_password</zorder>
   <zorder>label_6</zorder>
-  <zorder>btn_signup</zorder>
   <zorder>pushButton</zorder>
+  <zorder>label_8</zorder>
+  <zorder>txt_email_2</zorder>
  </widget>
  <resources/>
  <connections/>

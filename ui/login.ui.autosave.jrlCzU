@@ -35,8 +35,8 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>610</x>
-     <y>90</y>
+     <x>618</x>
+     <y>152</y>
      <width>551</width>
      <height>61</height>
     </rect>
@@ -55,8 +55,8 @@
   <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>400</y>
+     <x>580</x>
+     <y>480</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -77,10 +77,10 @@
   <widget class="QPushButton" name="pushButton_5">
    <property name="geometry">
     <rect>
-     <x>500</x>
-     <y>50</y>
+     <x>508</x>
+     <y>122</y>
      <width>491</width>
-     <height>521</height>
+     <height>491</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -95,8 +95,8 @@
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>190</y>
+     <x>578</x>
+     <y>252</y>
      <width>111</width>
      <height>20</height>
     </rect>
@@ -111,8 +111,8 @@
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>290</y>
+     <x>578</x>
+     <y>352</y>
      <width>81</width>
      <height>20</height>
     </rect>
@@ -127,8 +127,8 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>640</x>
-     <y>150</y>
+     <x>648</x>
+     <y>212</y>
      <width>241</width>
      <height>20</height>
     </rect>
@@ -143,8 +143,8 @@
   <widget class="QLineEdit" name="txt_email">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>220</y>
+     <x>578</x>
+     <y>282</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -164,8 +164,8 @@
   <widget class="QLineEdit" name="txt_password">
    <property name="geometry">
     <rect>
-     <x>570</x>
-     <y>320</y>
+     <x>578</x>
+     <y>382</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -186,10 +186,13 @@
    <property name="geometry">
     <rect>
      <x>580</x>
-     <y>370</y>
-     <width>121</width>
+     <y>450</y>
+     <width>141</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Lucida Sans Unicode&quot;;</string>
    </property>
    <property name="text">
     <string>Forgot password?</string>
@@ -199,7 +202,7 @@
    <property name="geometry">
     <rect>
      <x>830</x>
-     <y>450</y>
+     <y>530</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -220,8 +223,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>842</x>
-     <y>328</y>
+     <x>850</x>
+     <y>390</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -239,6 +242,22 @@ border: none;
      <normaloff>../img/eye-solid.svg</normaloff>../img/eye-solid.svg</iconset>
    </property>
   </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>540</y>
+     <width>201</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 9pt &quot;Lucida Sans Unicode&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Don't have an account yet?</string>
+   </property>
+  </widget>
   <zorder>label_7</zorder>
   <zorder>pushButton_5</zorder>
   <zorder>label</zorder>
@@ -251,6 +270,7 @@ border: none;
   <zorder>label_6</zorder>
   <zorder>btn_signup</zorder>
   <zorder>pushButton</zorder>
+  <zorder>label_5</zorder>
  </widget>
  <resources/>
  <connections/>
