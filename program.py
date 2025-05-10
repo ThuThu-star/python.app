@@ -1,41 +1,40 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtCore import *
+from PyQt6.QtGui import *
 from PyQt6 import uic
 
 class Alert(QMessageBox): #qmessage box la parent cua alert/(..) la lop cha
     def error_message(self, title, message):
-        self.selfcon(QMessageBox.Icon.Critical)
+        self.setIcon(QMessageBox.Icon.Critical)
         self.setWindowTitle(title)
         self.setText(message)
         self.exec()
 
     def success_message(self, title, message):
-        self.selfcon(QMessageBox.Icon.Information)
+        self.setIcon(QMessageBox.Icon.Information)
         self.setWindowTitle(title)
         self.setText(message)
         self.exec()
 
-msg = Alert() #msg = doi tuong, 
-
 class Login(QWidget):
     def __init__(self):
-        super().__init__() #khoi tao lai cac stuff cua parent
+        super().__init__()
         uic.loadUi("ui/login.ui", self)
         
         self.email_input = self.findChild(QLineEdit, "txt_email")
         self.password_input = self.findChild(QLineEdit, "txt_password")
-        self.btn_login = self.findChild(QPushButton, "btn_login")            #}lay init
+        self.btn_login = self.findChild(QPushButton, "btn_login")
         self.btn_register = self.findChild(QPushButton, "btn_register")
         self.btn_eye = self.findChild(QPushButton, "btn_eye")
 
         self.btn_eye.clicked.connect(lambda: self.show_password(self.btn_eye, self.password_input))
-        self.btn_eye_login.clicked.connect(self.login)
+        self.btn_login.clicked.connect(self.login)
         self.btn_register.clicked.connect(self.show_register)
 
     def show_password(self, button: QPushButton, input: QLineEdit):
         if input.echoMode() == QLineEdit.EchoMode.Password:
             input.setEchoMode(QLineEdit.EchoMode.Normal)
-            button.selfIcon(QIcon("img/eye-solid.svq"))
+            button.setIcon(QIcon("img/eye-solid.svg"))
         else:
             input.setEchoMode(QLineEdit.EchoMode.Password)
             button.setIcon(QIcon("img/eye-slash-solid.svg"))
@@ -50,13 +49,13 @@ class Login(QWidget):
             return
         if password == "":
             msg.error_message("Login", "Password is required")
-            self. password_input.setFocus() #setfocus: set mouse vao
+            self.password_input.setFocus()
             return
         
-        with open("date/users.txt", "r") as file:
+        with open("data/users.txt", "r") as file:
             for line in file:
                 data = line.strip().split(",")
-                if data[0] == email and data[1] == password: #}tinh data
+                if data[0] == email and data[1] == password:
                     msg.success_message("Login", "Welcome to the system")
                     return
                 
@@ -66,12 +65,13 @@ class Login(QWidget):
     def show_register(self):
         self.register = Register()
         self.register.show()
+        self.close()
 
     def show_home(self, email):
         self.home = Home(email)
         self.home.show()
-
-class Register(Qwidget):
+        self.close()
+class Register(QWidget):
     def __init__(self):
         super().__init__()
         uic.loadUi("ui/register.ui", self)
@@ -79,18 +79,20 @@ class Register(Qwidget):
         self.email_input = self.findChild(QLineEdit, "txt_email")
         self.password_input = self.findChild(QLineEdit, "txt_password")
         self.name_input = self.findChild(QLineEdit, "txt_name")
-        self.confirm_pass_input = self.findchild(QLineEdit, "txt_confirm_password")
+        self.confirm_pass_input = self.findChild(QLineEdit, "txt_confirm_password")
         self.btn_login = self.findChild(QPushButton, "btn_login")         
         self.btn_register = self.findChild(QPushButton, "btn_register")
         self.btn_eye_p = self.findChild(QPushButton, "btn_eye_p")
         self.btn_eye_cp = self.findChild(QPushButton, "btn_eye_cp")
 
         self.btn_eye_p.clicked.connect(lambda: self.show_password(self.btn_eye_p, self.password_input))
-        self.btn_eye_cp.clicked.connect(lambda: self.password(self.btn_eye_cp, self.confirm_pass_input))
+        self.btn_eye_cp.clicked.connect(lambda: self.show_password(self.btn_eye_cp, self.confirm_pass_input))
+        self.btn_register.clicked.connect(self.register)
+        self.btn_login.clicked.connect(self.show_login)
 
     def show_password(self, button: QPushButton, input: QLineEdit):
         if input.echoMode() == QLineEdit.EchoMode.Password:
-            input.selfEchoMode(QLineEdit.EchoMode.Normal)
+            input.setEchoMode(QLineEdit.EchoMode.Normal)
             button.setIcon(QIcon("img/eye-solid.svg"))
         else:
             input.setEchoMode(QLineEdit.EchoMode.Password)
@@ -99,11 +101,11 @@ class Register(Qwidget):
     def register(self):
         email = self.email_input.text().strip()
         name = self.name_input.text().strip()
-        password = self.pasword_input.text().strip()
+        password = self.password_input.text().strip()
         confirm_pass = self.confirm_pass_input.text().strip()
 
         if email == "":
-            msg.errpr_message("Register", "Email is required")
+            msg.error_message("Register", "Email is required")
             self.email_input.setFocus()
             return
         
@@ -127,27 +129,36 @@ class Register(Qwidget):
             self.password_input.setFocus()
             return
         
-        with open("date/users.txt", "r") as file:
-            for line in file: #moi dong 1 user
-                data =line.strip().split(",")
+        with open("data/users.txt", "r") as file:
+            for line in file:
+                data = line.strip().split(",")
                 if data[0] == email:
                     msg.error_message("Register", "Email already exists")
                     self.email_input.setFocus()
                     return
                 
-        with open("date/users.text", "a") as file:
-            file.write(f"{email}, {password}, {name}\n")
+        with open("data/users.txt", "a") as file:
+            file.write(f"{email},{password},{name}\n")
 
         msg.success_message("Register", "Account created successfully")
-        self.show_login() 
+        self.show_login()
 
     def show_login(self):
         self.login =Login()
         self.login.show()
+        self.close()
 
 class Home(QWidget):
     def __init__(self, email):
         super().__init__()
-        uic.loadUi("ui/home.ui", self)
+        uic.loadUi("ui/form.ui", self)
 
         self.email = email
+        
+
+if __name__ == "__main__":
+    app = QApplication([])
+    msg = Alert() #msg = doi tuong, 
+    login = Login()
+    login.show()
+    app.exec()
