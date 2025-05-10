@@ -198,7 +198,7 @@
     <string>Forgot password?</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_signup">
+  <widget class="QPushButton" name="btn_register">
    <property name="geometry">
     <rect>
      <x>830</x>
@@ -217,10 +217,10 @@
     padding: 7px 0;</string>
    </property>
    <property name="text">
-    <string>sign up</string>
+    <string>Register</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_eye">
    <property name="geometry">
     <rect>
      <x>850</x>
@@ -239,7 +239,7 @@ border: none;
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../img/eye-solid.svg</normaloff>../img/eye-solid.svg</iconset>
+     <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
@@ -268,8 +268,8 @@ border: none;
   <zorder>txt_email</zorder>
   <zorder>txt_password</zorder>
   <zorder>label_6</zorder>
-  <zorder>btn_signup</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>btn_register</zorder>
+  <zorder>btn_eye</zorder>
   <zorder>label_5</zorder>
  </widget>
  <resources/>

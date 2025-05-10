@@ -52,7 +52,7 @@
     <string>Welcome to Surabi Duren Bang Kumis</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="btn_signup">
+  <widget class="QPushButton" name="btn_register">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -194,11 +194,14 @@
     color: #333333;                    
     font-size: 14px; </string>
    </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
+   </property>
    <property name="placeholderText">
     <string>Input your password here</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_confirmed_password">
+  <widget class="QLineEdit" name="txt_confirm_password">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -214,6 +217,9 @@
     background-color: #ffffff;        
     color: #333333;                    
     font-size: 14px; </string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::EchoMode::Password</enum>
    </property>
    <property name="placeholderText">
     <string>Confirm your password here</string>
@@ -232,7 +238,7 @@
     <string>Already have an account?</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="btn_login">
    <property name="geometry">
     <rect>
      <x>810</x>
@@ -270,7 +276,7 @@
     <string>Username</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="txt_email_2">
+  <widget class="QLineEdit" name="txt_name">
    <property name="geometry">
     <rect>
      <x>570</x>
@@ -291,21 +297,67 @@
     <string>Input your username here</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="btn_eye_p">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>370</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: none;
+border: none;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_eye_cp">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>480</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: none;
+border: none;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/eye-slash-solid.svg</normaloff>../img/eye-slash-solid.svg</iconset>
+   </property>
+  </widget>
   <zorder>label_7</zorder>
   <zorder>pushButton_5</zorder>
   <zorder>label</zorder>
-  <zorder>btn_signup</zorder>
+  <zorder>btn_register</zorder>
   <zorder>label_2</zorder>
   <zorder>label_3</zorder>
   <zorder>label_4</zorder>
   <zorder>label_5</zorder>
   <zorder>txt_email</zorder>
   <zorder>txt_password</zorder>
-  <zorder>txt_confirmed_password</zorder>
+  <zorder>txt_confirm_password</zorder>
   <zorder>label_6</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>btn_login</zorder>
   <zorder>label_8</zorder>
-  <zorder>txt_email_2</zorder>
+  <zorder>txt_name</zorder>
+  <zorder>btn_eye_p</zorder>
+  <zorder>btn_eye_cp</zorder>
  </widget>
  <resources/>
  <connections/>

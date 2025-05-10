@@ -57,6 +57,7 @@ class Login(QWidget):
                 data = line.strip().split(",")
                 if data[0] == email and data[1] == password:
                     msg.success_message("Login", "Welcome to the system")
+                    self.show_home(email)
                     return
                 
         msg.error_message("Login", "Invalid email or password")
