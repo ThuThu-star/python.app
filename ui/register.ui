@@ -300,7 +300,7 @@
   <widget class="QPushButton" name="btn_eye_p">
    <property name="geometry">
     <rect>
-     <x>830</x>
+     <x>850</x>
      <y>370</y>
      <width>81</width>
      <height>31</height>
@@ -322,8 +322,8 @@ border: none;
   <widget class="QPushButton" name="btn_eye_cp">
    <property name="geometry">
     <rect>
-     <x>860</x>
-     <y>480</y>
+     <x>850</x>
+     <y>470</y>
      <width>81</width>
      <height>31</height>
     </rect>
