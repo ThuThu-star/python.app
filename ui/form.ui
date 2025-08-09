@@ -151,24 +151,106 @@ font-size: 20px;
       <string>Birthday:</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
+    <widget class="QLineEdit" name="lineEdit_7">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>260</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 240, 187);
+border: 5px;
+font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_8">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>340</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 240, 187);
+border: 5px;
+font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_9">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>420</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 240, 187);
+border: 5px;
+font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_10">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>490</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 240, 187);
+border: 5px;
+font-size: 20px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
      <property name="geometry">
       <rect>
        <x>340</x>
        <y>490</y>
-       <width>131</width>
-       <height>51</height>
+       <width>81</width>
+       <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">font: 9pt &quot;Lucida Sans Unicode&quot;;
-background-color: rgb(255, 240, 187);
-font-size: 20px;
-</string>
+      <string notr="true">background-color: rgb(255, 240, 187);
+font-size: 20px</string>
      </property>
-     <property name="text">
-      <string>Gender:</string>
-     </property>
+     <item>
+      <property name="text">
+       <string>Male</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Female</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Other</string>
+      </property>
+     </item>
     </widget>
    </widget>
    <widget class="QWidget" name="home">
@@ -465,10 +547,10 @@ border: none;</string>
       </property>
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>-10</y>
-        <width>131</width>
-        <height>181</height>
+        <x>30</x>
+        <y>-20</y>
+        <width>141</width>
+        <height>191</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1356,7 +1438,7 @@ border-radius: 30px</string>
     <widget class="QLabel" name="label_23">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>350</y>
        <width>191</width>
        <height>41</height>
@@ -1374,7 +1456,7 @@ font-size: 50px</string>
     <widget class="QPushButton" name="pushButton_34">
      <property name="geometry">
       <rect>
-       <x>70</x>
+       <x>80</x>
        <y>400</y>
        <width>93</width>
        <height>51</height>
@@ -1401,7 +1483,7 @@ border: none;</string>
     <widget class="QPushButton" name="pushButton_35">
      <property name="geometry">
       <rect>
-       <x>160</x>
+       <x>170</x>
        <y>400</y>
        <width>93</width>
        <height>51</height>
@@ -1428,7 +1510,7 @@ border: none;</string>
     <widget class="QPushButton" name="pushButton_36">
      <property name="geometry">
       <rect>
-       <x>250</x>
+       <x>260</x>
        <y>400</y>
        <width>93</width>
        <height>51</height>
@@ -1457,7 +1539,7 @@ border: none;</string>
       <rect>
        <x>40</x>
        <y>450</y>
-       <width>361</width>
+       <width>351</width>
        <height>151</height>
       </rect>
      </property>
@@ -1541,7 +1623,7 @@ font-size: 30px</string>
       <rect>
        <x>430</x>
        <y>160</y>
-       <width>611</width>
+       <width>621</width>
        <height>411</height>
       </rect>
      </property>
@@ -1558,7 +1640,7 @@ li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 1:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Boil 500ml of water and add 20grams of noodle soup. Then, you stir them well.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 2:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Add two tablespoons of fish sauce to make the broth more flavorful.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 3:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Peel the raw beef or dip it longer if you want to enjoy well-cooked and soft meat.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 4:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Dip all of the beef balls in boiling water to cook. Then, you should dip the rice noodles.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 5:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Put beef balls, beef, Pho noodles, and vegetables into the broth pot. After that, move them in a bowl and relish. You could select several vegetables to improve the deliciousness of Pho such as cinnamon and herbs.&lt;br /&gt;&lt;br /&gt;-&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 3:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Peel the raw beef or dip it longer if you want to enjoy well-cooked and soft meat.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 4:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Dip all of the beef balls in boiling water to cook. Then, you should dip the rice noodles.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 5:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Put beef balls, beef, Pho noodles, and vegetables into the broth pot. After that, move them in a bowl and relish. You could select several vegetables to improve the deliciousness of Pho such as cinnamon and herbs.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:12pt; font-style:italic; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;While this is a simple way to make Phở Bò, feel free to explore other variations or add your favorite toppings to make it your own -&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
@@ -1584,10 +1666,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
    <widget class="QPushButton" name="btn_home">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>0</x>
       <y>10</y>
       <width>93</width>
-      <height>71</height>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -1612,7 +1694,7 @@ border: none;
    <widget class="QPushButton" name="pushButton_2">
     <property name="geometry">
      <rect>
-      <x>990</x>
+      <x>1000</x>
       <y>10</y>
       <width>93</width>
       <height>71</height>
@@ -1654,6 +1736,9 @@ border: none;
     color: #333333;                    
     font-size: 14px; </string>
     </property>
+    <property name="text">
+     <string/>
+    </property>
     <property name="placeholderText">
      <string>Search anything here</string>
     </property>
@@ -1661,14 +1746,29 @@ border: none;
    <widget class="QPushButton" name="btn_profile">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>40</y>
+      <x>70</x>
+      <y>20</y>
       <width>93</width>
-      <height>29</height>
+      <height>61</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background: none;
+border: none;
+</string>
+    </property>
     <property name="text">
-     <string>Profile</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../img/circle-user-solid (1).svg</normaloff>../img/circle-user-solid (1).svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>50</width>
+      <height>50</height>
+     </size>
     </property>
    </widget>
   </widget>

@@ -1,0 +1,34 @@
+[
+    { 
+        "id": 1,
+        "name": "One Piece",
+        "rating": 4.5,
+        "description": "Good",
+        "release_date": "31/08/1997",
+        "image": "img/OnePiece.jpg"
+    },
+    { 
+        "id": 2,
+        "name": "Naruto",
+        "rating": 4.5,
+        "description": "Good",
+        "release_date": "03/11/2002",
+        "image":"img/Naruto.jpg"
+    },
+    { 
+        "id": 3,
+        "name": "Bleach",
+        "rating": 4.5,
+        "description": "Good",
+        "release_date": "05/10/2004",
+        "image":"img/Bleach.png"
+    },
+    { 
+        "id": 4,
+        "name": "Attack On Titan",
+        "rating": 4.5,
+        "description": "Good",
+        "release_date": "07/04/2013",
+        "image":"img/AttackOnTitan.png"
+    }
+]

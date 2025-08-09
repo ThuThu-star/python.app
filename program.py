@@ -151,8 +151,8 @@ class Register(QWidget):
         self.close()
 
 class Home(QWidget):
-    def __init__(self, email):
-        super().__init__()
+    def __init__(self, email): #initt=hàm khởi tạo
+        super().__init__()#gọi hàm khởi tạo cho lớp cha
         uic.loadUi("ui/form.ui", self)
 
         self.email = email
