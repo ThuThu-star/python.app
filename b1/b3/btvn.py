@@ -3,6 +3,9 @@ class Animal:
         self.name = name
         self.species = species
         self.sound = sound
+
+    def __str__(self):
+        return f"{self.name}"
     
     def make_sound(self):
         print(f"{self.name} kêu {self.sound}")
@@ -14,3 +17,7 @@ animals = [
 
 for animal in animals:
     animal.make_sound()
+
+
+    def list(self):
+

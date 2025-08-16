@@ -7,5 +7,14 @@
         "birthday": "01/01/2000",
         "gender": "Female",
         "avatar": ""
+    },
+    {
+        "id": 2,
+        "email": "woah@gmail.com",
+        "password": "123456789",
+        "name": "a",
+        "birthday": "03/02/2005",
+        "gender": "Female",
+        "avatar": "C:/Users/DELL/Downloads/kake udone.jpg"
     }
 ]

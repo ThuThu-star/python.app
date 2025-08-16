@@ -75,15 +75,16 @@ border-radius: 30px</string>
     <widget class="QComboBox" name="txt_gender">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>380</y>
+       <x>390</x>
+       <y>400</y>
        <width>101</width>
        <height>41</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 240, 187);
-font-size: 20px</string>
+      <string notr="true">background-color: rgb(254, 255, 244);
+font-size: 20px;
+border-radius: 20 px</string>
      </property>
      <item>
       <property name="text">
@@ -109,11 +110,17 @@ font-size: 20px</string>
     <widget class="QLineEdit" name="txt_name">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>270</x>
        <y>120</y>
-       <width>231</width>
+       <width>241</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 20px;
+background: rgb(254, 255, 244);
+color: rgb(0, 0, 0);
+border: rgb(255, 192, 116)</string>
      </property>
      <property name="text">
       <string/>
@@ -122,18 +129,24 @@ font-size: 20px</string>
     <widget class="QLineEdit" name="txt_email">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>220</y>
-       <width>231</width>
+       <x>270</x>
+       <y>230</y>
+       <width>241</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 20px;
+background: rgb(254, 255, 244);
+color: rgb(0, 0, 0);
+border: rgb(255, 192, 116)</string>
      </property>
     </widget>
     <widget class="QPushButton" name="btn_avatar">
      <property name="geometry">
       <rect>
        <x>570</x>
-       <y>150</y>
+       <y>120</y>
        <width>271</width>
        <height>261</height>
       </rect>
@@ -145,21 +158,32 @@ font-size: 20px</string>
     <widget class="QDateEdit" name="txt_birthday">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>320</y>
-       <width>251</width>
+       <x>270</x>
+       <y>330</y>
+       <width>241</width>
        <height>41</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 20px;
+background: rgb(254, 255, 244);
+color: rgb(0, 0, 0);
+border: rgb(255, 192, 116)</string>
      </property>
     </widget>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>100</y>
-       <width>58</width>
-       <height>16</height>
+       <x>280</x>
+       <y>85</y>
+       <width>101</width>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
+background-color: none;
+font-size: 30px</string>
      </property>
      <property name="text">
       <string>Name</string>
@@ -168,11 +192,16 @@ font-size: 20px</string>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>200</y>
-       <width>58</width>
-       <height>16</height>
+       <x>270</x>
+       <y>195</y>
+       <width>81</width>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
+background-color: none;
+font-size: 30px</string>
      </property>
      <property name="text">
       <string>Email</string>
@@ -181,11 +210,16 @@ font-size: 20px</string>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>260</x>
-       <y>300</y>
-       <width>58</width>
-       <height>16</height>
+       <x>270</x>
+       <y>295</y>
+       <width>141</width>
+       <height>31</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
+background-color: none;
+font-size: 30px</string>
      </property>
      <property name="text">
       <string>Birthday</string>
@@ -196,9 +230,14 @@ font-size: 20px</string>
       <rect>
        <x>270</x>
        <y>390</y>
-       <width>58</width>
-       <height>16</height>
+       <width>111</width>
+       <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;
+background-color: none;
+font-size: 30px</string>
      </property>
      <property name="text">
       <string>Gender</string>
@@ -208,10 +247,20 @@ font-size: 20px</string>
      <property name="geometry">
       <rect>
        <x>310</x>
-       <y>440</y>
+       <y>470</y>
        <width>131</width>
        <height>51</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 20px;
+background: rgb(238, 169, 73);
+color: rgb(0, 0, 0);
+border: rgb(255, 192, 116);
+front-size: 40px;
+font: 700 14pt &quot;Segoe UI&quot;;
+
+</string>
      </property>
      <property name="text">
       <string>Save</string>
@@ -1519,8 +1568,8 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:700;&quot;&gt;A traditional Vietnamese beef noodle soup with silky rice noodles, tender beef slices, and rich spiced broth — topped with fresh herbs and chili.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;A traditional Vietnamese beef noodle soup with silky rice noodles, tender beef slices, and rich spiced broth — topped with fresh herbs and chili.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_24">
@@ -1561,8 +1610,8 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:14pt;&quot;&gt;Beef balls, beef, Pho noodles and vegetable,...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Beef balls, beef, Pho noodles and vegetable,...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_25">
@@ -1603,9 +1652,9 @@ p, li { white-space: pre-wrap; }
 hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 1:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Boil 500ml of water and add 20grams of noodle soup. Then, you stir them well.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 2:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Add two tablespoons of fish sauce to make the broth more flavorful.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 3:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Peel the raw beef or dip it longer if you want to enjoy well-cooked and soft meat.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 4:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Dip all of the beef balls in boiling water to cook. Then, you should dip the rice noodles.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 5:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Put beef balls, beef, Pho noodles, and vegetables into the broth pot. After that, move them in a bowl and relish. You could select several vegetables to improve the deliciousness of Pho such as cinnamon and herbs.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:12pt; font-style:italic; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot; font-family:'Segoe UI'; font-size:12pt; font-style:italic;&quot;&gt;While this is a simple way to make Phở Bò, feel free to explore other variations or add your favorite toppings to make it your own -&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 3:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Peel the raw beef or dip it longer if you want to enjoy well-cooked and soft meat.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 4:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Dip all of the beef balls in boiling water to cook. Then, you should dip the rice noodles.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; font-weight:700; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;Step 5:&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:14pt; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt; Put beef balls, beef, Pho noodles, and vegetables into the broth pot. After that, move them in a bowl and relish. You could select several vegetables to improve the deliciousness of Pho such as cinnamon and herbs.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:'SFProDisplay','sans-serif'; font-size:12pt; font-style:italic; color:#181818; background-color:#ffffff; word-spacing:1.59375px;&quot;&gt;- &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-style:italic;&quot;&gt;While this is a simple way to make Phở Bò, feel free to explore other variations or add your favorite toppings to make it your own -&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
     </widget>
    </widget>
