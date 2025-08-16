@@ -199,7 +199,7 @@ class Home(QWidget):
 
 if __name__ == "__main__":
     app = QApplication([])
-    msg = Alert() #msg = doi tuong, 
+    msg = Alert() #msg = doi tuong
     login = Login()
     login.show()
     sys.exit(app.exec())
