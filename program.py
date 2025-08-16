@@ -3,6 +3,7 @@ from PyQt6.QtCore import *
 from PyQt6.QtGui import *
 from PyQt6 import uic
 import sys
+from data_oi to import *
 
 class Alert(QMessageBox): #qmessage box la parent cua alert/(..) la lop cha
     def error_message(self, title, message):
@@ -52,14 +53,12 @@ class Login(QWidget):
             msg.error_message("Login", "Password is required")
             self.password_input.setFocus()
             return
-        
-        with open("data/users.txt", "r") as file:
-            for line in file:
-                data = line.strip().split(",")
-                if data[0] == email and data[1] == password:
-                    msg.success_message("Login", "Welcome to the system")
-                    self.show_home(email)
-                    return
+                
+        user = get_user_by_email_and_password(email, password)
+        if user:
+            msg.success_message("Login", "Welcome to the system")
+            self.show_home(email)
+            return
                 
         msg.error_message("Login", "Invalid email or password")
         self.email_input.setFocus()
@@ -131,16 +130,13 @@ class Register(QWidget):
             self.password_input.setFocus()
             return
         
-        with open("data/users.txt", "r") as file:
-            for line in file:
-                data = line.strip().split(",")
-                if data[0] == email:
-                    msg.error_message("Register", "Email already exists")
-                    self.email_input.setFocus()
-                    return
-                
-        with open("data/users.txt", "a") as file:
-            file.write(f"{email},{password},{name}\n")
+        user = get_user_by_email(email)
+        if user:
+            msg.error_message("Register", "Email already exists")
+            self. email_input.setFocus()
+            return
+        
+        create_user(email, password, name)
 
         msg.success_message("Register", "Account created successfully")
         self.show_login()
@@ -151,15 +147,23 @@ class Register(QWidget):
         self.close()
 
 class Home(QWidget):
-    def __init__(self, email): #initt=hàm khởi tạo
+    def __init__(self, id): #initt=hàm khởi tạo
         super().__init__()#gọi hàm khởi tạo cho lớp cha
         uic.loadUi("ui/form.ui", self)
 
-        self.email = email
+        self.id = id
+        self.user = get_iser_by_id
+
         self.stack_widget = self.findChild(QStackedWidget, "stackedWidget")
         self.btn_home = self.findChild(QPushButton, "btn_home")
         self.btn_profile = self.findChild(QPushButton, "btn_profile")
         self.btn_detail = self.findChild(QPushButton, "btn_detail")
+
+        self.txt_name = self.findChild(QLineEdit, "txt_name")
+        self.txt_email = self.findChild(QLineEdit, "txt_email")
+        self.txt_birthday = self.findChild(QLineEdit, "txt_birthday")
+        self.txt_gender = self.findChild(QLineEdit, "txt_gender")
+        self.txt_avatar = self.findChild(QLineEdit, "txt_avatar")
 
         self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 1))
         self.btn_profile.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 0))
@@ -167,7 +171,20 @@ class Home(QWidget):
 
     def navigate_screen(self, stackWidget: QStackedWidget, index: int):
         stackWidget.setCurrentIndex(index)
+
+    def load_user_info(self):
+        self.txt_name.setText(self.user["name"])
+        self.txt_email.setText(self.user["email"])
+        self.txt_birthday.setDate(QDate.fromString(self.user["birthday"], "dd/MM/yyy"))
+        self.txt_gender.setCurrentText(self.user["gender"])
+        self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
         
+    def update_avatar(self):
+        file,_ = QFileDialog.getOpenFileName(self, "Select Image", "", "Image Files(*.png *.jpg *jpeg *.bmp)")
+        if file:
+            self.user["avatar"] = file
+            self.btn_avatar.setIcon(QIcon(file))
+            update_user_avatar(self.id, file)
 
 if __name__ == "__main__":
     app = QApplication([])

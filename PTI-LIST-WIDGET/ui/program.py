@@ -40,8 +40,13 @@ class MainWindow(QMainWindow):
         with open("data/anime.json", "r") as f:
             data = json.load(f)
         return data
-    
 
+def get_user_by_email_and_password(email, password):
+    users = load_json("data/users.json")
+    for user in users:
+        if user["email"] == email and user["password"] == password:
+            return user
+    return None
     
 if __name__ == "__main__":
     app = QApplication(sys.argv)
