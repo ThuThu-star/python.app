@@ -1,15 +1,15 @@
-import json
+import json 
 
 def load_json(file_path):
     with open(file_path, "r") as f:
         data = json.load(f)
-        return data
-    
-def write_json(file_path, data):#write json: de len
+    return data
+
+def write_json(file_path, data):
     with open(file_path, "w") as f:
         json.dump(data, f, indent=4)
-
-def create_user(email, password, name, birthday = "", gender = ""): 
+        
+def create_user(email, password, name, birthday = "", gender = "None"):
     users = load_json("data/users.json")
     users.append({
         "id": len(users) + 1,
@@ -17,10 +17,11 @@ def create_user(email, password, name, birthday = "", gender = ""):
         "password": password,
         "name": name,
         "birthday": birthday,
-        "gender": gender
+        "gender": gender,
+        "avatar": ""
     })
     write_json("data/users.json", users)
-
+    
 def get_user_by_id(id):
     users = load_json("data/users.json")
     for user in users:
@@ -52,8 +53,8 @@ def update_user(id, name, birthday = "", gender = "None"):
             user["gender"] = gender
             break
     write_json("data/users.json", users)
-
-def update_user_avater(id, avatar):
+    
+def update_user_avatar(id, avatar):
     users = load_json("data/users.json")
     for user in users:
         if user["id"] == id:

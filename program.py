@@ -3,7 +3,7 @@ from PyQt6.QtCore import *
 from PyQt6.QtGui import *
 from PyQt6 import uic
 import sys
-from data_oi to import *
+from data_io import *
 
 class Alert(QMessageBox): #qmessage box la parent cua alert/(..) la lop cha
     def error_message(self, title, message):
@@ -57,7 +57,7 @@ class Login(QWidget):
         user = get_user_by_email_and_password(email, password)
         if user:
             msg.success_message("Login", "Welcome to the system")
-            self.show_home(email)
+            self.show_home(user["id"])
             return
                 
         msg.error_message("Login", "Invalid email or password")
@@ -68,8 +68,8 @@ class Login(QWidget):
         self.register.show()
         self.close()
 
-    def show_home(self, email):
-        self.home = Home(email)
+    def show_home(self, id):
+        self.home = Home(id)
         self.home.show()
         self.close()
 class Register(QWidget):
@@ -152,7 +152,7 @@ class Home(QWidget):
         uic.loadUi("ui/form.ui", self)
 
         self.id = id
-        self.user = get_iser_by_id
+        self.user = get_user_by_id(id)
         self.load_user_info()
 
         self.stack_widget = self.findChild(QStackedWidget, "stackedWidget")
@@ -163,14 +163,16 @@ class Home(QWidget):
 
         self.txt_name = self.findChild(QLineEdit, "txt_name")
         self.txt_email = self.findChild(QLineEdit, "txt_email")
-        self.txt_birthday = self.findChild(QLineEdit, "txt_birthday")
-        self.txt_gender = self.findChild(QLineEdit, "txt_gender")
+        self.txt_birthday = self.findChild(QDateEdit, "txt_birthday")
+        self.txt_gender = self.findChild(QComboBox, "txt_gender")
         self.txt_avatar = self.findChild(QLineEdit, "txt_avatar")
+        self.btn_avatar = self.findChild(QPushButton, "btn_avatar")
 
         self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 1))
         self.btn_profile.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 0))
         self.btn_detail.clicked.connect(lambda: self.navigate_screen(self.stack_widget, 2))
         self.btn_save_account.clicked.connect(self.update_user_info)
+        self.btn_avatar.clicked.connect(self.update_avatar)
 
     def navigate_screen(self, stackWidget: QStackedWidget, index: int):
         stackWidget.setCurrentIndex(index)
@@ -178,9 +180,16 @@ class Home(QWidget):
     def load_user_info(self):
         self.txt_name.setText(self.user["name"])
         self.txt_email.setText(self.user["email"])
-        self.txt_birthday.setDate(QDate.fromString(self.user["birthday"], "dd/MM/yyyy"))
-        self.txt_gender.setCurrentText(self.user["gender"])
-        self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+        if self.user["birthday"]:
+            self.txt_birthday.setDate(QDate.fromString(self.user["birthday"], "dd/MM/yyyy"))
+        if self.user["gender"]:
+            self.txt_gender.setCurrentText(self.user["gender"])
+        else:
+            self.txt_gender.setCurrentText("None")
+        if self.user["avatar"]:
+            self.btn_avatar.setIcon(QIcon(self.user["avatar"]))
+        else:
+            self.btn_avatar.setIcon(QIcon("img/default-avatar.png"))
         
     def update_avatar(self):
         file,_ = QFileDialog.getOpenFileName(self, "Select Image", "", "Image Files(*.png *.jpg *jpeg *.bmp)")
@@ -191,7 +200,7 @@ class Home(QWidget):
             
     def update_user_info(self):
         name = self.txt_name.text().strip()
-        birthday = self.text_birthday.date().toString("dd/MM/yyyy")
+        birthday = self.txt_birthday.date().toString("dd/MM/yyyy")
         gender = self.txt_gender.currentText()
         update_user(self.id, name, birthday, gender)
         msg.success_message("Update", "User info updated successfully")
@@ -203,4 +212,3 @@ if __name__ == "__main__":
     login = Login()
     login.show()
     sys.exit(app.exec())
-    app.exec()
