@@ -72,17 +72,20 @@ background-color: none</string>
    <widget class="QLabel" name="label_picture">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>0</y>
-      <width>311</width>
-      <height>311</height>
+      <x>-70</x>
+      <y>-50</y>
+      <width>531</width>
+      <height>431</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: none</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../../../Downloads/Curry-Udon-Featured-removebg-preview.png</pixmap>
+     <pixmap>../../../../../Downloads/udon_curry_bowl-removebg-preview.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>

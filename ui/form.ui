@@ -27,7 +27,7 @@
     </rect>
    </property>
    <property name="currentIndex">
-    <number>0</number>
+    <number>1</number>
    </property>
    <widget class="QWidget" name="account">
     <widget class="QLineEdit" name="lineEdit_3">
@@ -314,10 +314,10 @@ font: 700 14pt &quot;Segoe UI&quot;;
      <widget class="QLabel" name="label_6">
       <property name="geometry">
        <rect>
-        <x>-20</x>
-        <y>0</y>
-        <width>231</width>
-        <height>151</height>
+        <x>10</x>
+        <y>-20</y>
+        <width>181</width>
+        <height>171</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -327,7 +327,7 @@ font: 700 14pt &quot;Segoe UI&quot;;
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/kake_udone-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/kake_udon-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -561,9 +561,9 @@ border: none;</string>
       </property>
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>-20</x>
         <y>-20</y>
-        <width>141</width>
+        <width>241</width>
         <height>191</height>
        </rect>
       </property>
@@ -574,7 +574,7 @@ border: none;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/Curry-Udon-2-IV-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/udon_curry_bowl-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -603,10 +603,10 @@ border: none;</string>
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>-20</x>
-        <y>-10</y>
-        <width>241</width>
-        <height>161</height>
+        <x>0</x>
+        <y>-20</y>
+        <width>181</width>
+        <height>171</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -616,7 +616,7 @@ border: none;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/istockphoto-1028123408-612x612-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/pho-bo-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -746,10 +746,10 @@ border: none;</string>
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>-10</y>
-        <width>181</width>
-        <height>161</height>
+        <x>0</x>
+        <y>0</y>
+        <width>201</width>
+        <height>151</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -759,7 +759,7 @@ border: none;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/rotated_takoyaki_horizontal-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/takoyaki-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -868,9 +868,9 @@ border: none;</string>
      <widget class="QLabel" name="label_14">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>0</y>
-        <width>201</width>
+        <width>181</width>
         <height>151</height>
        </rect>
       </property>
@@ -881,7 +881,7 @@ border: none;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/images-removebg-preview (1).png</pixmap>
+       <pixmap>../../../../../Downloads/beefsteak-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1091,17 +1091,21 @@ border: none;</string>
      <widget class="QLabel" name="label_16">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>0</y>
-        <width>151</width>
-        <height>131</height>
+        <x>-30</x>
+        <y>-50</y>
+        <width>261</width>
+        <height>231</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none
+</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/Chocolate-Molten-Lava-Cakes-27-1024x1024-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/choco_lava_cake-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1157,9 +1161,9 @@ border: none;</string>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>60</x>
         <y>140</y>
-        <width>151</width>
+        <width>81</width>
         <height>20</height>
        </rect>
       </property>
@@ -1168,7 +1172,7 @@ border: none;</string>
 background-color: none</string>
       </property>
       <property name="text">
-       <string>Japanese Cheesecake</string>
+       <string>Cheesecake</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_27">
@@ -1237,17 +1241,21 @@ border: none;</string>
      <widget class="QLabel" name="label_19">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>20</x>
         <y>0</y>
-        <width>171</width>
-        <height>141</height>
+        <width>151</width>
+        <height>151</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none
+</string>
       </property>
       <property name="text">
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/cheesecakeeeyy-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/cheesecakey-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1276,10 +1284,10 @@ border: none;</string>
      <widget class="QLabel" name="label_20">
       <property name="geometry">
        <rect>
-        <x>0</x>
-        <y>10</y>
-        <width>191</width>
-        <height>131</height>
+        <x>10</x>
+        <y>0</y>
+        <width>171</width>
+        <height>141</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1289,7 +1297,7 @@ border: none;</string>
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Downloads/gyoza_dumlings.-removebg-preview.png</pixmap>
+       <pixmap>../../../../../Downloads/gyoza_dumpling-removebg-preview.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -1430,10 +1438,10 @@ border-radius: 30px</string>
     <widget class="QLabel" name="label_22">
      <property name="geometry">
       <rect>
-       <x>-50</x>
-       <y>10</y>
-       <width>541</width>
-       <height>361</height>
+       <x>-10</x>
+       <y>-30</y>
+       <width>421</width>
+       <height>401</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -1443,7 +1451,7 @@ border-radius: 30px</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../../../Downloads/istockphoto-1028123408-612x612-removebg-preview.png</pixmap>
+      <pixmap>../../../../../Downloads/pho-bo-removebg-preview.png</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
